@@ -8,17 +8,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import modelo.Cliente;
 
-/**
- *
- * @author Edison Zambrano - © Programador Fantasma
- */
+
 public class Ctrl_Cliente {
 
-    /**
-     * **************************************************
-     * metodo para guardar un nuevo clientw
-     * **************************************************
-     */
+
     public boolean guardar(Cliente objeto) {
         boolean respuesta = false;
         Connection cn = Conexion.conectar();
@@ -43,11 +36,7 @@ public class Ctrl_Cliente {
         return respuesta;
     }
 
-    /**
-     * ********************************************************************
-     * metodo para consultar si el producto ya esta registrado en la BBDD
-     * ********************************************************************
-     */
+
     public boolean existeCliente(String DNI) {
         boolean respuesta = false;
         String sql = "select DNI from tb_cliente where DNI = '" + DNI + "';";
@@ -65,11 +54,7 @@ public class Ctrl_Cliente {
         return respuesta;
     }
 
-    /**
-     * **************************************************
-     * metodo para actualizar un cliente
-     * **************************************************
-     */
+
     public boolean actualizar(Cliente objeto, int idCliente) {
         boolean respuesta = false;
         Connection cn = Conexion.conectar();
@@ -95,11 +80,7 @@ public class Ctrl_Cliente {
         return respuesta;
     }
 
-    /**
-     * **************************************************
-     * metodo para eliminar un cliente
-     * **************************************************
-     */
+
     public boolean eliminar(int idCliente) {
         boolean respuesta = false;
         Connection cn = Conexion.conectar();
