@@ -9,9 +9,7 @@ import java.sql.Statement;
 import modelo.CabeceraVenta;
 import modelo.DetalleVenta;
 
-/**
- * @author edison
- */
+
 public class Ctrl_RegistrarVenta {
     
     //ultimo id de la cabecera
